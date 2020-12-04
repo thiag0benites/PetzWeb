@@ -1,0 +1,296 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      },
+      {
+        "line": 2,
+        "value": "#Autor: thi.fam2014@gmail.com"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 8,
+        "name": "Abrir o site",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 151817500,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat br.com.steps.ContextoSteps.que_acesso_o_sistema(ContextoSteps.java:12)\r\n\tat ✽.Dado que acesso o sistema(BuscaLoja.feature:9)\r\n",
+              "status": "pending"
+            },
+            "line": 9,
+            "name": "que acesso o sistema",
+            "match": {
+              "location": "ContextoSteps.que_acesso_o_sistema()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6426768100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "Acessar loja por Cep",
+        "description": "",
+        "id": "realizar-busca-por-lojas-no-sistema;acessar-loja-por-cep;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 729699500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "acesso \"Nossas Lojas\" no site Petz",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Nossas Lojas",
+                  "offset": 8
+                }
+              ],
+              "location": "BuscaLojaSteps.acesso_no_site_Petz(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "seleciono \"Lojas\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Lojas",
+                  "offset": 11
+                }
+              ],
+              "location": "BuscaLojaSteps.seleciono(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "preencho os campos Filtrar por \"CEP\" e \"06414007\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CEP",
+                  "offset": 32
+                },
+                {
+                  "val": "06414007",
+                  "offset": 40
+                }
+              ],
+              "location": "BuscaLojaSteps.preencho_os_campos_Filtrar_por_e(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "valido as lojas encontradas",
+            "match": {
+              "location": "BuscaLojaSteps.valido_as_lojas_encontradas()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 23,
+            "name": "@CT03"
+          },
+          {
+            "line": 3,
+            "name": "@BUSCALOJA"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Abrir o site",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 466200,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat br.com.steps.ContextoSteps.que_acesso_o_sistema(ContextoSteps.java:12)\r\n\tat ✽.Dado que acesso o sistema(BuscaLoja.feature:9)\r\n",
+              "status": "pending"
+            },
+            "line": 9,
+            "name": "que acesso o sistema",
+            "match": {
+              "location": "ContextoSteps.que_acesso_o_sistema()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5522562600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Acessar loja por Cep",
+        "description": "",
+        "id": "realizar-busca-por-lojas-no-sistema;acessar-loja-por-cep;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 624194800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "acesso \"Nossas Lojas\" no site Petz",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Nossas Lojas",
+                  "offset": 8
+                }
+              ],
+              "location": "BuscaLojaSteps.acesso_no_site_Petz(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "seleciono \"Lojas\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Lojas",
+                  "offset": 11
+                }
+              ],
+              "location": "BuscaLojaSteps.seleciono(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "preencho os campos Filtrar por \"CEP\" e \"04347090\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CEP",
+                  "offset": 32
+                },
+                {
+                  "val": "04347090",
+                  "offset": 40
+                }
+              ],
+              "location": "BuscaLojaSteps.preencho_os_campos_Filtrar_por_e(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "valido as lojas encontradas",
+            "match": {
+              "location": "BuscaLojaSteps.valido_as_lojas_encontradas()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 23,
+            "name": "@CT03"
+          },
+          {
+            "line": 3,
+            "name": "@BUSCALOJA"
+          }
+        ]
+      }
+    ],
+    "name": "Realizar busca por lojas no sistema",
+    "description": "  Eu como usuario \r\n  Quero localizar uma loja no sistema",
+    "id": "realizar-busca-por-lojas-no-sistema",
+    "keyword": "Funcionalidade",
+    "uri": "BuscaLoja.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@BUSCALOJA"
+      }
+    ]
+  }
+]
