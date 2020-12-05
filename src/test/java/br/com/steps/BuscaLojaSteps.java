@@ -8,21 +8,13 @@ import cucumber.api.java.pt.Quando;
 public class BuscaLojaSteps extends BuscaLojaPage{
 
 	@Quando("^acesso \"([^\"]*)\" no site da Petz$")
-	public void acesso_no_site_da_Petz(String arg1) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
-
-	@Quando("^seleciono \"([^\"]*)\"$")
-	public void seleciono(String arg1) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+	public void acesso_no_site_da_Petz(String itemMenu) {
+		selecionaItemMenu(itemMenu);
 	}
 
 	@Quando("^preencho os campos Fitrar por \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\"$")
-	public void preencho_os_campos_Fitrar_por(String arg1, String arg2, String arg3) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+	public void preencho_os_campos_Fitrar_por(String filtro, String estado, String cidade) {
+		
 	}
 
 	@Quando("^realizo a busca$")

@@ -8,10 +8,9 @@ Funcionalidade: Realizar busca por lojas no sistema
   Contexto: Abrir o site
     Dado que acesso o sistema
 
-  @CT02
+  @CT01
   Esquema do Cenario: Busca loja por Estado/Cidade
     Quando acesso "Nossas Lojas" no site da Petz
-    E seleciono "Lojas"
     E preencho os campos Fitrar por <Filtro>, <Estado>, <Cidade>
     E realizo a busca
     Entao valido as lojas encontradas
@@ -20,10 +19,9 @@ Funcionalidade: Realizar busca por lojas no sistema
       | Filtro          | Estado | Cidade    |
       | "Estado/Cidade" | "SP"   | "Barueri" |
 
-  @CT03
+  @CT02
   Esquema do Cenario: Acessar loja por Cep
     Quando acesso "Nossas Lojas" no site Petz
-    E seleciono "Lojas"
     E preencho os campos Filtrar por <Filtro> e <CEP>
     Entao valido as lojas encontradas
 
