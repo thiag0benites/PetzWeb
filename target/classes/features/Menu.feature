@@ -1,6 +1,6 @@
 #language: pt
 #Autor: thi.fam2014@gmail.com
-@SMOKETEST-MENU
+@SMOKETEST
 Funcionalidade: Testes na funcionalidade de navegar pelos itens do sistema
   	Eu como usuario 
   	Quero navegar pelos itens do menu
@@ -8,18 +8,11 @@ Funcionalidade: Testes na funcionalidade de navegar pelos itens do sistema
   Contexto: Abrir o site
     Dado que acesso o sistema
 
-  @CT01
-  Esquema do Cenario: Navegar pelo sistema
-    Quando seleciono o item <Item>
-    Entao valido o resultado da pesquisa
-
-    Exemplos: 
-      | Item                |
-      | "Adoção"            |
-      | "Aquário"           |
-      | "Cães"              |
-      | "Gatos"             |
-      | "Espécies"          |
-      | "Bem-Estar"         |
-      | "Eventos"           |
-      | "Posse responsável" |
+  Cenario: Teste de fumaça navegação menu
+    Quando seleciono e valido o item <itemMenu> do menu
+      | Adoção    |
+      | Aquário   |
+      | Cães      |
+      | Gatos     |
+      | Espécies  |
+      | Bem-Estar |

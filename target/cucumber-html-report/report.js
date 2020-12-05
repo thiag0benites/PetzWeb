@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("BuscaLoja.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Menu.feature");
 formatter.feature({
   "comments": [
     {
@@ -11,314 +11,126 @@ formatter.feature({
     }
   ],
   "line": 4,
-  "name": "Realizar busca por lojas no sistema",
-  "description": "  Eu como usuario \r\n  Quero localizar uma loja no sistema",
-  "id": "realizar-busca-por-lojas-no-sistema",
+  "name": "Testes na funcionalidade de navegar pelos itens do sistema",
+  "description": "\tEu como usuario \r\n\tQuero navegar pelos itens do menu",
+  "id": "testes-na-funcionalidade-de-navegar-pelos-itens-do-sistema",
   "keyword": "Funcionalidade",
   "tags": [
     {
       "line": 3,
-      "name": "@BUSCALOJA"
+      "name": "@SMOKETEST"
     }
   ]
 });
-formatter.scenarioOutline({
-  "line": 24,
-  "name": "Acessar loja por Cep",
+formatter.before({
+  "duration": 6481168600,
+  "status": "passed"
+});
+formatter.background({
+  "line": 8,
+  "name": "Abrir o site",
   "description": "",
-  "id": "realizar-busca-por-lojas-no-sistema;acessar-loja-por-cep",
-  "type": "scenario_outline",
-  "keyword": "Esquema do Cenario",
-  "tags": [
-    {
-      "line": 23,
-      "name": "@CT03"
-    }
-  ]
+  "type": "background",
+  "keyword": "Contexto"
 });
 formatter.step({
-  "line": 25,
-  "name": "acesso \"Nossas Lojas\" no site Petz",
-  "keyword": "Quando "
+  "line": 9,
+  "name": "que acesso o sistema",
+  "keyword": "Dado "
 });
-formatter.step({
-  "line": 26,
-  "name": "seleciono \"Lojas\"",
-  "keyword": "E "
+formatter.match({
+  "location": "ContextoSteps.que_acesso_o_sistema()"
 });
-formatter.step({
-  "line": 27,
-  "name": "preencho os campos Filtrar por \u003cFiltro\u003e e \u003cCEP\u003e",
-  "keyword": "E "
+formatter.write("Passou! Acesso ao blog realizado!");
+formatter.embedding("image/png", "embedded0.png");
+formatter.result({
+  "duration": 7105388800,
+  "status": "passed"
 });
-formatter.step({
-  "line": 28,
-  "name": "valido as lojas encontradas",
-  "keyword": "Entao "
-});
-formatter.examples({
-  "line": 30,
-  "name": "",
+formatter.scenario({
+  "line": 11,
+  "name": "Teste de fumaça navegação menu",
   "description": "",
-  "id": "realizar-busca-por-lojas-no-sistema;acessar-loja-por-cep;",
+  "id": "testes-na-funcionalidade-de-navegar-pelos-itens-do-sistema;teste-de-fumaça-navegação-menu",
+  "type": "scenario",
+  "keyword": "Cenario"
+});
+formatter.step({
+  "line": 12,
+  "name": "seleciono e valido o item \u003citemMenu\u003e do menu",
   "rows": [
     {
       "cells": [
-        "Filtro",
-        "CEP"
+        "Adoção"
       ],
-      "line": 31,
-      "id": "realizar-busca-por-lojas-no-sistema;acessar-loja-por-cep;;1"
+      "line": 13
     },
     {
       "cells": [
-        "\"CEP\"",
-        "\"06414007\""
+        "Aquário"
       ],
-      "line": 32,
-      "id": "realizar-busca-por-lojas-no-sistema;acessar-loja-por-cep;;2"
+      "line": 14
     },
     {
       "cells": [
-        "\"CEP\"",
-        "\"04347090\""
+        "Cães"
       ],
-      "line": 33,
-      "id": "realizar-busca-por-lojas-no-sistema;acessar-loja-por-cep;;3"
-    }
-  ],
-  "keyword": "Exemplos"
-});
-formatter.before({
-  "duration": 6426768100,
-  "status": "passed"
-});
-formatter.background({
-  "line": 8,
-  "name": "Abrir o site",
-  "description": "",
-  "type": "background",
-  "keyword": "Contexto"
-});
-formatter.step({
-  "line": 9,
-  "name": "que acesso o sistema",
-  "keyword": "Dado "
-});
-formatter.match({
-  "location": "ContextoSteps.que_acesso_o_sistema()"
-});
-formatter.result({
-  "duration": 151817500,
-  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat br.com.steps.ContextoSteps.que_acesso_o_sistema(ContextoSteps.java:12)\r\n\tat ✽.Dado que acesso o sistema(BuscaLoja.feature:9)\r\n",
-  "status": "pending"
-});
-formatter.scenario({
-  "line": 32,
-  "name": "Acessar loja por Cep",
-  "description": "",
-  "id": "realizar-busca-por-lojas-no-sistema;acessar-loja-por-cep;;2",
-  "type": "scenario",
-  "keyword": "Esquema do Cenario",
-  "tags": [
-    {
-      "line": 23,
-      "name": "@CT03"
+      "line": 15
     },
     {
-      "line": 3,
-      "name": "@BUSCALOJA"
+      "cells": [
+        "Gatos"
+      ],
+      "line": 16
+    },
+    {
+      "cells": [
+        "Espécies"
+      ],
+      "line": 17
+    },
+    {
+      "cells": [
+        "Bem-Estar"
+      ],
+      "line": 18
     }
-  ]
-});
-formatter.step({
-  "line": 25,
-  "name": "acesso \"Nossas Lojas\" no site Petz",
+  ],
   "keyword": "Quando "
 });
-formatter.step({
-  "line": 26,
-  "name": "seleciono \"Lojas\"",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 27,
-  "name": "preencho os campos Filtrar por \"CEP\" e \"06414007\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "E "
-});
-formatter.step({
-  "line": 28,
-  "name": "valido as lojas encontradas",
-  "keyword": "Entao "
-});
 formatter.match({
-  "arguments": [
-    {
-      "val": "Nossas Lojas",
-      "offset": 8
-    }
-  ],
-  "location": "BuscaLojaSteps.acesso_no_site_Petz(String)"
+  "location": "MenuSteps.seleciono_e_valido_o_item_itemMenu_do_menu(DataTable)"
 });
+formatter.write("Passou! Item ADOÇÃO foi selecionado!");
+formatter.embedding("image/png", "embedded1.png");
+formatter.write("Passou! Foram carregados 10 artigos na primeira página do item ADOÇÃO do menu");
+formatter.embedding("image/png", "embedded2.png");
+formatter.write("Passou! Item AQUÁRIO foi selecionado!");
+formatter.embedding("image/png", "embedded3.png");
+formatter.write("Passou! Foram carregados 10 artigos na primeira página do item AQUÁRIO do menu");
+formatter.embedding("image/png", "embedded4.png");
+formatter.write("Passou! Item CÃES foi selecionado!");
+formatter.embedding("image/png", "embedded5.png");
+formatter.write("Passou! Foram carregados 10 artigos na primeira página do item CÃES do menu");
+formatter.embedding("image/png", "embedded6.png");
+formatter.write("Passou! Item GATOS foi selecionado!");
+formatter.embedding("image/png", "embedded7.png");
+formatter.write("Passou! Foram carregados 10 artigos na primeira página do item GATOS do menu");
+formatter.embedding("image/png", "embedded8.png");
+formatter.write("Passou! Item ESPÉCIES foi selecionado!");
+formatter.embedding("image/png", "embedded9.png");
+formatter.write("Passou! Foram carregados 10 artigos na primeira página do item ESPÉCIES do menu");
+formatter.embedding("image/png", "embedded10.png");
+formatter.write("Passou! Item BEM-ESTAR foi selecionado!");
+formatter.embedding("image/png", "embedded11.png");
+formatter.write("Passou! Foram carregados 10 artigos na primeira página do item BEM-ESTAR do menu");
+formatter.embedding("image/png", "embedded12.png");
 formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Lojas",
-      "offset": 11
-    }
-  ],
-  "location": "BuscaLojaSteps.seleciono(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "CEP",
-      "offset": 32
-    },
-    {
-      "val": "06414007",
-      "offset": 40
-    }
-  ],
-  "location": "BuscaLojaSteps.preencho_os_campos_Filtrar_por_e(String,String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "BuscaLojaSteps.valido_as_lojas_encontradas()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 729699500,
+  "duration": 28136044500,
   "status": "passed"
 });
-formatter.before({
-  "duration": 5522562600,
-  "status": "passed"
-});
-formatter.background({
-  "line": 8,
-  "name": "Abrir o site",
-  "description": "",
-  "type": "background",
-  "keyword": "Contexto"
-});
-formatter.step({
-  "line": 9,
-  "name": "que acesso o sistema",
-  "keyword": "Dado "
-});
-formatter.match({
-  "location": "ContextoSteps.que_acesso_o_sistema()"
-});
-formatter.result({
-  "duration": 466200,
-  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat br.com.steps.ContextoSteps.que_acesso_o_sistema(ContextoSteps.java:12)\r\n\tat ✽.Dado que acesso o sistema(BuscaLoja.feature:9)\r\n",
-  "status": "pending"
-});
-formatter.scenario({
-  "line": 33,
-  "name": "Acessar loja por Cep",
-  "description": "",
-  "id": "realizar-busca-por-lojas-no-sistema;acessar-loja-por-cep;;3",
-  "type": "scenario",
-  "keyword": "Esquema do Cenario",
-  "tags": [
-    {
-      "line": 23,
-      "name": "@CT03"
-    },
-    {
-      "line": 3,
-      "name": "@BUSCALOJA"
-    }
-  ]
-});
-formatter.step({
-  "line": 25,
-  "name": "acesso \"Nossas Lojas\" no site Petz",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 26,
-  "name": "seleciono \"Lojas\"",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 27,
-  "name": "preencho os campos Filtrar por \"CEP\" e \"04347090\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "E "
-});
-formatter.step({
-  "line": 28,
-  "name": "valido as lojas encontradas",
-  "keyword": "Entao "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Nossas Lojas",
-      "offset": 8
-    }
-  ],
-  "location": "BuscaLojaSteps.acesso_no_site_Petz(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Lojas",
-      "offset": 11
-    }
-  ],
-  "location": "BuscaLojaSteps.seleciono(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "CEP",
-      "offset": 32
-    },
-    {
-      "val": "04347090",
-      "offset": 40
-    }
-  ],
-  "location": "BuscaLojaSteps.preencho_os_campos_Filtrar_por_e(String,String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "BuscaLojaSteps.valido_as_lojas_encontradas()"
-});
-formatter.result({
-  "status": "skipped"
-});
 formatter.after({
-  "duration": 624194800,
+  "duration": 1166497000,
   "status": "passed"
 });
 });

@@ -267,7 +267,8 @@ public class FrameworkWeb {
 	public boolean elementoVisivel(WebElement elemento) {
 
 		try {
-			aguardaElemento(elemento, 10);
+			aguardaElemento(elemento, 30);
+			aguardar(1);
 			return elemento.isDisplayed();
 
 		} catch (Exception e) {
@@ -365,5 +366,28 @@ public class FrameworkWeb {
 			escreveRelatorio(false, "Não foi possível selecionar o item " + item, true);
 		}
 
+	}
+	
+	public WebElement retornaItemLista(WebElement elementoLista, String itemLista) {
+		
+		WebElement elementoItemLista = null;
+		
+		try {
+			
+			List<WebElement> lista = driver.findElements(By.tagName("li"));
+			
+			for (WebElement item : lista) {
+				if (item.getText().equals(itemLista)) {
+					elementoItemLista = item;
+					break;
+				}
+			}
+			
+			return elementoItemLista;
+			
+		} catch (Exception e) {
+			escreveRelatorio(false, "O item " + itemLista + " não foi localizado na lista " + elementoLista, true);
+			return elementoItemLista;
+		}
 	}
 }
