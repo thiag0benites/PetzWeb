@@ -24,9 +24,9 @@ formatter.feature({
 });
 formatter.scenarioOutline({
   "line": 12,
-  "name": "Busca loja por Estado/Cidade",
+  "name": "CT01:Busca loja por Estado/Cidade",
   "description": "",
-  "id": "realizar-busca-por-lojas-no-sistema;busca-loja-por-estado/cidade",
+  "id": "realizar-busca-por-lojas-no-sistema;ct01:busca-loja-por-estado/cidade",
   "type": "scenario_outline",
   "keyword": "Esquema do Cenario",
   "tags": [
@@ -43,29 +43,19 @@ formatter.step({
 });
 formatter.step({
   "line": 14,
-  "name": "seleciono \"Lojas\"",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 15,
   "name": "preencho os campos Fitrar por \u003cFiltro\u003e, \u003cEstado\u003e, \u003cCidade\u003e",
   "keyword": "E "
 });
 formatter.step({
-  "line": 16,
-  "name": "realizo a busca",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 17,
+  "line": 15,
   "name": "valido as lojas encontradas",
   "keyword": "Entao "
 });
 formatter.examples({
-  "line": 19,
+  "line": 17,
   "name": "",
   "description": "",
-  "id": "realizar-busca-por-lojas-no-sistema;busca-loja-por-estado/cidade;",
+  "id": "realizar-busca-por-lojas-no-sistema;ct01:busca-loja-por-estado/cidade;",
   "rows": [
     {
       "cells": [
@@ -73,8 +63,8 @@ formatter.examples({
         "Estado",
         "Cidade"
       ],
-      "line": 20,
-      "id": "realizar-busca-por-lojas-no-sistema;busca-loja-por-estado/cidade;;1"
+      "line": 18,
+      "id": "realizar-busca-por-lojas-no-sistema;ct01:busca-loja-por-estado/cidade;;1"
     },
     {
       "cells": [
@@ -82,14 +72,14 @@ formatter.examples({
         "\"SP\"",
         "\"Barueri\""
       ],
-      "line": 21,
-      "id": "realizar-busca-por-lojas-no-sistema;busca-loja-por-estado/cidade;;2"
+      "line": 19,
+      "id": "realizar-busca-por-lojas-no-sistema;ct01:busca-loja-por-estado/cidade;;2"
     }
   ],
   "keyword": "Exemplos"
 });
 formatter.before({
-  "duration": 6528514600,
+  "duration": 6807241200,
   "status": "passed"
 });
 formatter.background({
@@ -110,14 +100,14 @@ formatter.match({
 formatter.write("Passou! Acesso ao blog realizado!");
 formatter.embedding("image/png", "embedded0.png");
 formatter.result({
-  "duration": 5492742400,
+  "duration": 5188185700,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 21,
-  "name": "Busca loja por Estado/Cidade",
+  "line": 19,
+  "name": "CT01:Busca loja por Estado/Cidade",
   "description": "",
-  "id": "realizar-busca-por-lojas-no-sistema;busca-loja-por-estado/cidade;;2",
+  "id": "realizar-busca-por-lojas-no-sistema;ct01:busca-loja-por-estado/cidade;;2",
   "type": "scenario",
   "keyword": "Esquema do Cenario",
   "tags": [
@@ -138,11 +128,6 @@ formatter.step({
 });
 formatter.step({
   "line": 14,
-  "name": "seleciono \"Lojas\"",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 15,
   "name": "preencho os campos Fitrar por \"Estado/Cidade\", \"SP\", \"Barueri\"",
   "matchedColumns": [
     0,
@@ -152,12 +137,7 @@ formatter.step({
   "keyword": "E "
 });
 formatter.step({
-  "line": 16,
-  "name": "realizo a busca",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 17,
+  "line": 15,
   "name": "valido as lojas encontradas",
   "keyword": "Entao "
 });
@@ -170,22 +150,11 @@ formatter.match({
   ],
   "location": "BuscaLojaSteps.acesso_no_site_da_Petz(String)"
 });
+formatter.write("Passou! Item Nossas Lojas foi selecionado!");
+formatter.embedding("image/png", "embedded1.png");
 formatter.result({
-  "duration": 7022800,
-  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat br.com.steps.BuscaLojaSteps.acesso_no_site_da_Petz(BuscaLojaSteps.java:13)\r\n\tat ✽.Quando acesso \"Nossas Lojas\" no site da Petz(BuscaLoja.feature:13)\r\n",
-  "status": "pending"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Lojas",
-      "offset": 11
-    }
-  ],
-  "location": "BuscaLojaSteps.seleciono(String)"
-});
-formatter.result({
-  "status": "skipped"
+  "duration": 13668681700,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -204,94 +173,81 @@ formatter.match({
   ],
   "location": "BuscaLojaSteps.preencho_os_campos_Fitrar_por(String,String,String)"
 });
+formatter.write("Passou! Os campos Estado e Cidade foram preenchidos: SP - Barueri");
+formatter.embedding("image/png", "embedded2.png");
 formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "BuscaLojaSteps.realizo_a_busca()"
-});
-formatter.result({
-  "status": "skipped"
+  "duration": 3676997200,
+  "status": "passed"
 });
 formatter.match({
   "location": "BuscaLojaSteps.valido_as_lojas_encontradas()"
 });
+formatter.write("Passou! A busca retornou 2 lojas");
+formatter.embedding("image/png", "embedded3.png");
 formatter.result({
-  "status": "skipped"
+  "duration": 2640399000,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 680764800,
+  "duration": 1154386500,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 24,
-  "name": "Acessar loja por Cep",
+  "line": 22,
+  "name": "CT02:Busca loja por CEP",
   "description": "",
-  "id": "realizar-busca-por-lojas-no-sistema;acessar-loja-por-cep",
+  "id": "realizar-busca-por-lojas-no-sistema;ct02:busca-loja-por-cep",
   "type": "scenario_outline",
   "keyword": "Esquema do Cenario",
   "tags": [
     {
-      "line": 23,
+      "line": 21,
       "name": "@CT02"
     }
   ]
 });
 formatter.step({
-  "line": 25,
-  "name": "acesso \"Nossas Lojas\" no site Petz",
+  "line": 23,
+  "name": "acesso \"Nossas Lojas\" no site da Petz",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 26,
-  "name": "seleciono \"Lojas\"",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 27,
+  "line": 24,
   "name": "preencho os campos Filtrar por \u003cFiltro\u003e e \u003cCEP\u003e",
   "keyword": "E "
 });
 formatter.step({
-  "line": 28,
+  "line": 25,
   "name": "valido as lojas encontradas",
   "keyword": "Entao "
 });
 formatter.examples({
-  "line": 30,
+  "line": 27,
   "name": "",
   "description": "",
-  "id": "realizar-busca-por-lojas-no-sistema;acessar-loja-por-cep;",
+  "id": "realizar-busca-por-lojas-no-sistema;ct02:busca-loja-por-cep;",
   "rows": [
     {
       "cells": [
         "Filtro",
         "CEP"
       ],
-      "line": 31,
-      "id": "realizar-busca-por-lojas-no-sistema;acessar-loja-por-cep;;1"
+      "line": 28,
+      "id": "realizar-busca-por-lojas-no-sistema;ct02:busca-loja-por-cep;;1"
     },
     {
       "cells": [
         "\"CEP\"",
         "\"06414007\""
       ],
-      "line": 32,
-      "id": "realizar-busca-por-lojas-no-sistema;acessar-loja-por-cep;;2"
-    },
-    {
-      "cells": [
-        "\"CEP\"",
-        "\"04347090\""
-      ],
-      "line": 33,
-      "id": "realizar-busca-por-lojas-no-sistema;acessar-loja-por-cep;;3"
+      "line": 29,
+      "id": "realizar-busca-por-lojas-no-sistema;ct02:busca-loja-por-cep;;2"
     }
   ],
   "keyword": "Exemplos"
 });
 formatter.before({
-  "duration": 5567741000,
+  "duration": 5453326600,
   "status": "passed"
 });
 formatter.background({
@@ -310,21 +266,21 @@ formatter.match({
   "location": "ContextoSteps.que_acesso_o_sistema()"
 });
 formatter.write("Passou! Acesso ao blog realizado!");
-formatter.embedding("image/png", "embedded1.png");
+formatter.embedding("image/png", "embedded4.png");
 formatter.result({
-  "duration": 5960352500,
+  "duration": 5094135000,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 32,
-  "name": "Acessar loja por Cep",
+  "line": 29,
+  "name": "CT02:Busca loja por CEP",
   "description": "",
-  "id": "realizar-busca-por-lojas-no-sistema;acessar-loja-por-cep;;2",
+  "id": "realizar-busca-por-lojas-no-sistema;ct02:busca-loja-por-cep;;2",
   "type": "scenario",
   "keyword": "Esquema do Cenario",
   "tags": [
     {
-      "line": 23,
+      "line": 21,
       "name": "@CT02"
     },
     {
@@ -334,17 +290,12 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 25,
-  "name": "acesso \"Nossas Lojas\" no site Petz",
+  "line": 23,
+  "name": "acesso \"Nossas Lojas\" no site da Petz",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 26,
-  "name": "seleciono \"Lojas\"",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 27,
+  "line": 24,
   "name": "preencho os campos Filtrar por \"CEP\" e \"06414007\"",
   "matchedColumns": [
     0,
@@ -353,7 +304,7 @@ formatter.step({
   "keyword": "E "
 });
 formatter.step({
-  "line": 28,
+  "line": 25,
   "name": "valido as lojas encontradas",
   "keyword": "Entao "
 });
@@ -364,24 +315,13 @@ formatter.match({
       "offset": 8
     }
   ],
-  "location": "BuscaLojaSteps.acesso_no_site_Petz(String)"
+  "location": "BuscaLojaSteps.acesso_no_site_da_Petz(String)"
 });
+formatter.write("Passou! Item Nossas Lojas foi selecionado!");
+formatter.embedding("image/png", "embedded5.png");
 formatter.result({
-  "duration": 324900,
-  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat br.com.steps.BuscaLojaSteps.acesso_no_site_Petz(BuscaLojaSteps.java:37)\r\n\tat ✽.Quando acesso \"Nossas Lojas\" no site Petz(BuscaLoja.feature:25)\r\n",
-  "status": "pending"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Lojas",
-      "offset": 11
-    }
-  ],
-  "location": "BuscaLojaSteps.seleciono(String)"
-});
-formatter.result({
-  "status": "skipped"
+  "duration": 12905626600,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -396,21 +336,97 @@ formatter.match({
   ],
   "location": "BuscaLojaSteps.preencho_os_campos_Filtrar_por_e(String,String)"
 });
+formatter.write("Passou! O campo CEP foi preenchido: 06414007");
+formatter.embedding("image/png", "embedded6.png");
 formatter.result({
-  "status": "skipped"
+  "duration": 617653600,
+  "status": "passed"
 });
 formatter.match({
   "location": "BuscaLojaSteps.valido_as_lojas_encontradas()"
 });
+formatter.write("Passou! A busca retornou 6 lojas");
+formatter.embedding("image/png", "embedded7.png");
 formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 745685100,
+  "duration": 2615363800,
   "status": "passed"
 });
+formatter.after({
+  "duration": 1028701900,
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "line": 32,
+  "name": "CT03:Busca e seleciona loja por Cep",
+  "description": "",
+  "id": "realizar-busca-por-lojas-no-sistema;ct03:busca-e-seleciona-loja-por-cep",
+  "type": "scenario_outline",
+  "keyword": "Esquema do Cenario",
+  "tags": [
+    {
+      "line": 31,
+      "name": "@CT03"
+    }
+  ]
+});
+formatter.step({
+  "line": 33,
+  "name": "acesso \"Nossas Lojas\" no site da Petz",
+  "keyword": "Quando "
+});
+formatter.step({
+  "line": 34,
+  "name": "preencho os campos Filtrar por \u003cFiltro\u003e e \u003cCEP\u003e",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 35,
+  "name": "valido as lojas encontradas",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 36,
+  "name": "acesso e valido a loja \u003cLoja\u003e",
+  "keyword": "Entao "
+});
+formatter.examples({
+  "line": 38,
+  "name": "",
+  "description": "",
+  "id": "realizar-busca-por-lojas-no-sistema;ct03:busca-e-seleciona-loja-por-cep;",
+  "rows": [
+    {
+      "cells": [
+        "Filtro",
+        "CEP",
+        "Loja"
+      ],
+      "line": 39,
+      "id": "realizar-busca-por-lojas-no-sistema;ct03:busca-e-seleciona-loja-por-cep;;1"
+    },
+    {
+      "cells": [
+        "\"CEP\"",
+        "\"06414007\"",
+        "\"Petz Alphaville\""
+      ],
+      "line": 40,
+      "id": "realizar-busca-por-lojas-no-sistema;ct03:busca-e-seleciona-loja-por-cep;;2"
+    },
+    {
+      "cells": [
+        "\"CEP\"",
+        "\"04347090\"",
+        "\"Petz Itaim\""
+      ],
+      "line": 41,
+      "id": "realizar-busca-por-lojas-no-sistema;ct03:busca-e-seleciona-loja-por-cep;;3"
+    }
+  ],
+  "keyword": "Exemplos"
+});
 formatter.before({
-  "duration": 5471269100,
+  "duration": 5712771700,
   "status": "passed"
 });
 formatter.background({
@@ -429,22 +445,22 @@ formatter.match({
   "location": "ContextoSteps.que_acesso_o_sistema()"
 });
 formatter.write("Passou! Acesso ao blog realizado!");
-formatter.embedding("image/png", "embedded2.png");
+formatter.embedding("image/png", "embedded8.png");
 formatter.result({
-  "duration": 5073876800,
+  "duration": 5026295200,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 33,
-  "name": "Acessar loja por Cep",
+  "line": 40,
+  "name": "CT03:Busca e seleciona loja por Cep",
   "description": "",
-  "id": "realizar-busca-por-lojas-no-sistema;acessar-loja-por-cep;;3",
+  "id": "realizar-busca-por-lojas-no-sistema;ct03:busca-e-seleciona-loja-por-cep;;2",
   "type": "scenario",
   "keyword": "Esquema do Cenario",
   "tags": [
     {
-      "line": 23,
-      "name": "@CT02"
+      "line": 31,
+      "name": "@CT03"
     },
     {
       "line": 3,
@@ -453,18 +469,13 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 25,
-  "name": "acesso \"Nossas Lojas\" no site Petz",
+  "line": 33,
+  "name": "acesso \"Nossas Lojas\" no site da Petz",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 26,
-  "name": "seleciono \"Lojas\"",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 27,
-  "name": "preencho os campos Filtrar por \"CEP\" e \"04347090\"",
+  "line": 34,
+  "name": "preencho os campos Filtrar por \"CEP\" e \"06414007\"",
   "matchedColumns": [
     0,
     1
@@ -472,8 +483,16 @@ formatter.step({
   "keyword": "E "
 });
 formatter.step({
-  "line": 28,
+  "line": 35,
   "name": "valido as lojas encontradas",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 36,
+  "name": "acesso e valido a loja \"Petz Alphaville\"",
+  "matchedColumns": [
+    2
+  ],
   "keyword": "Entao "
 });
 formatter.match({
@@ -483,24 +502,145 @@ formatter.match({
       "offset": 8
     }
   ],
-  "location": "BuscaLojaSteps.acesso_no_site_Petz(String)"
+  "location": "BuscaLojaSteps.acesso_no_site_da_Petz(String)"
 });
+formatter.write("Passou! Item Nossas Lojas foi selecionado!");
+formatter.embedding("image/png", "embedded9.png");
 formatter.result({
-  "duration": 363500,
-  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat br.com.steps.BuscaLojaSteps.acesso_no_site_Petz(BuscaLojaSteps.java:37)\r\n\tat ✽.Quando acesso \"Nossas Lojas\" no site Petz(BuscaLoja.feature:25)\r\n",
-  "status": "pending"
+  "duration": 13352726600,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Lojas",
-      "offset": 11
+      "val": "CEP",
+      "offset": 32
+    },
+    {
+      "val": "06414007",
+      "offset": 40
     }
   ],
-  "location": "BuscaLojaSteps.seleciono(String)"
+  "location": "BuscaLojaSteps.preencho_os_campos_Filtrar_por_e(String,String)"
 });
+formatter.write("Passou! O campo CEP foi preenchido: 06414007");
+formatter.embedding("image/png", "embedded10.png");
 formatter.result({
-  "status": "skipped"
+  "duration": 598841900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BuscaLojaSteps.valido_as_lojas_encontradas()"
+});
+formatter.write("Passou! A busca retornou 6 lojas");
+formatter.embedding("image/png", "embedded11.png");
+formatter.result({
+  "duration": 2653241900,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Petz Alphaville",
+      "offset": 24
+    }
+  ],
+  "location": "BuscaLojaSteps.acesso_e_valido_a_loja(String)"
+});
+formatter.write("Passou! A loja Petz Alphaville foi selecionada!");
+formatter.embedding("image/png", "embedded12.png");
+formatter.result({
+  "duration": 2881215500,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 819058100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 5474217900,
+  "status": "passed"
+});
+formatter.background({
+  "line": 8,
+  "name": "Abrir o site",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 9,
+  "name": "que acesso o sistema",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "ContextoSteps.que_acesso_o_sistema()"
+});
+formatter.write("Passou! Acesso ao blog realizado!");
+formatter.embedding("image/png", "embedded13.png");
+formatter.result({
+  "duration": 5731303500,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 41,
+  "name": "CT03:Busca e seleciona loja por Cep",
+  "description": "",
+  "id": "realizar-busca-por-lojas-no-sistema;ct03:busca-e-seleciona-loja-por-cep;;3",
+  "type": "scenario",
+  "keyword": "Esquema do Cenario",
+  "tags": [
+    {
+      "line": 31,
+      "name": "@CT03"
+    },
+    {
+      "line": 3,
+      "name": "@BUSCALOJA"
+    }
+  ]
+});
+formatter.step({
+  "line": 33,
+  "name": "acesso \"Nossas Lojas\" no site da Petz",
+  "keyword": "Quando "
+});
+formatter.step({
+  "line": 34,
+  "name": "preencho os campos Filtrar por \"CEP\" e \"04347090\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "E "
+});
+formatter.step({
+  "line": 35,
+  "name": "valido as lojas encontradas",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 36,
+  "name": "acesso e valido a loja \"Petz Itaim\"",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "Entao "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Nossas Lojas",
+      "offset": 8
+    }
+  ],
+  "location": "BuscaLojaSteps.acesso_no_site_da_Petz(String)"
+});
+formatter.write("Passou! Item Nossas Lojas foi selecionado!");
+formatter.embedding("image/png", "embedded14.png");
+formatter.result({
+  "duration": 12554306200,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -515,17 +655,173 @@ formatter.match({
   ],
   "location": "BuscaLojaSteps.preencho_os_campos_Filtrar_por_e(String,String)"
 });
+formatter.write("Passou! O campo CEP foi preenchido: 04347090");
+formatter.embedding("image/png", "embedded15.png");
 formatter.result({
-  "status": "skipped"
+  "duration": 581129000,
+  "status": "passed"
 });
 formatter.match({
   "location": "BuscaLojaSteps.valido_as_lojas_encontradas()"
 });
+formatter.write("Passou! A busca retornou 6 lojas");
+formatter.embedding("image/png", "embedded16.png");
 formatter.result({
-  "status": "skipped"
+  "duration": 2604285100,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Petz Itaim",
+      "offset": 24
+    }
+  ],
+  "location": "BuscaLojaSteps.acesso_e_valido_a_loja(String)"
+});
+formatter.write("Passou! A loja Petz Itaim foi selecionada!");
+formatter.embedding("image/png", "embedded17.png");
+formatter.result({
+  "duration": 3032711700,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 778254100,
+  "duration": 813938600,
+  "status": "passed"
+});
+formatter.uri("Menu.feature");
+formatter.feature({
+  "comments": [
+    {
+      "line": 1,
+      "value": "#language: pt"
+    },
+    {
+      "line": 2,
+      "value": "#Autor: thi.fam2014@gmail.com"
+    }
+  ],
+  "line": 4,
+  "name": "Testes na funcionalidade de navegar pelos itens do sistema",
+  "description": "\tEu como usuario \r\n\tQuero navegar pelos itens do menu",
+  "id": "testes-na-funcionalidade-de-navegar-pelos-itens-do-sistema",
+  "keyword": "Funcionalidade",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@SMOKETEST"
+    }
+  ]
+});
+formatter.before({
+  "duration": 5487666500,
+  "status": "passed"
+});
+formatter.background({
+  "line": 8,
+  "name": "Abrir o site",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 9,
+  "name": "que acesso o sistema",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "ContextoSteps.que_acesso_o_sistema()"
+});
+formatter.write("Passou! Acesso ao blog realizado!");
+formatter.embedding("image/png", "embedded18.png");
+formatter.result({
+  "duration": 5464816000,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 11,
+  "name": "Teste de fumaça navegação menu",
+  "description": "",
+  "id": "testes-na-funcionalidade-de-navegar-pelos-itens-do-sistema;teste-de-fumaça-navegação-menu",
+  "type": "scenario",
+  "keyword": "Cenario"
+});
+formatter.step({
+  "line": 12,
+  "name": "seleciono e valido o item \u003citemMenu\u003e do menu",
+  "rows": [
+    {
+      "cells": [
+        "Adoção"
+      ],
+      "line": 13
+    },
+    {
+      "cells": [
+        "Aquário"
+      ],
+      "line": 14
+    },
+    {
+      "cells": [
+        "Cães"
+      ],
+      "line": 15
+    },
+    {
+      "cells": [
+        "Gatos"
+      ],
+      "line": 16
+    },
+    {
+      "cells": [
+        "Espécies"
+      ],
+      "line": 17
+    },
+    {
+      "cells": [
+        "Bem-Estar"
+      ],
+      "line": 18
+    }
+  ],
+  "keyword": "Quando "
+});
+formatter.match({
+  "location": "MenuSteps.seleciono_e_valido_o_item_itemMenu_do_menu(DataTable)"
+});
+formatter.write("Passou! Item ADOÇÃO foi selecionado!");
+formatter.embedding("image/png", "embedded19.png");
+formatter.write("Passou! Foram carregados 10 artigos na primeira página do item ADOÇÃO do menu");
+formatter.embedding("image/png", "embedded20.png");
+formatter.write("Passou! Item AQUÁRIO foi selecionado!");
+formatter.embedding("image/png", "embedded21.png");
+formatter.write("Passou! Foram carregados 10 artigos na primeira página do item AQUÁRIO do menu");
+formatter.embedding("image/png", "embedded22.png");
+formatter.write("Passou! Item CÃES foi selecionado!");
+formatter.embedding("image/png", "embedded23.png");
+formatter.write("Passou! Foram carregados 10 artigos na primeira página do item CÃES do menu");
+formatter.embedding("image/png", "embedded24.png");
+formatter.write("Passou! Item GATOS foi selecionado!");
+formatter.embedding("image/png", "embedded25.png");
+formatter.write("Passou! Foram carregados 10 artigos na primeira página do item GATOS do menu");
+formatter.embedding("image/png", "embedded26.png");
+formatter.write("Passou! Item ESPÉCIES foi selecionado!");
+formatter.embedding("image/png", "embedded27.png");
+formatter.write("Passou! Foram carregados 10 artigos na primeira página do item ESPÉCIES do menu");
+formatter.embedding("image/png", "embedded28.png");
+formatter.write("Passou! Item BEM-ESTAR foi selecionado!");
+formatter.embedding("image/png", "embedded29.png");
+formatter.write("Passou! Foram carregados 10 artigos na primeira página do item BEM-ESTAR do menu");
+formatter.embedding("image/png", "embedded30.png");
+formatter.result({
+  "duration": 28408646100,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 758662100,
   "status": "passed"
 });
 });

@@ -47,7 +47,7 @@ public class FrameworkWeb {
 			aguardaElemento(elemento, 10);
 			elemento.click();
 		} catch (Exception e) {
-			escreveRelatorio(false, "Não foi possível efetuar o click no elemento " + elemento, true);
+			escreveRelatorio(false, "Erro! Não foi possível efetuar o click no elemento " + elemento, true);
 		}
 
 	}
@@ -58,7 +58,7 @@ public class FrameworkWeb {
 			aguardaElemento(elemento, 10);
 			elemento.clear();
 		} catch (Exception e) {
-			escreveRelatorio(false, "Não foi possível limpar o campo " + elemento, true);
+			escreveRelatorio(false, "Erro! Não foi possível limpar o campo " + elemento, true);
 		}
 
 	}
@@ -69,7 +69,7 @@ public class FrameworkWeb {
 			aguardaElemento(elemento, 10);
 			elemento.sendKeys(valor);
 		} catch (Exception e) {
-			escreveRelatorio(false, "Não foi possível preencher o campo " + elemento, true);
+			escreveRelatorio(false, "Erro! Não foi possível preencher o campo " + elemento, true);
 		}
 
 	}
@@ -81,11 +81,11 @@ public class FrameworkWeb {
 			WebDriverWait wait = new WebDriverWait(driver, timeOut);
 
 			if (wait.until(ExpectedConditions.visibilityOfAllElements(elemento)) == null) {
-				escreveRelatorio(false, "O elemento " + elemento + " não foi carregado!", true);
+				escreveRelatorio(false, "Falhou! O elemento " + elemento + " não foi carregado!", true);
 			}
 
 		} catch (Exception e) {
-			escreveRelatorio(false, "O elemento " + elemento + " não foi carregado!", true);
+			escreveRelatorio(false, "Erro! O elemento " + elemento + " não foi carregado!", true);
 		}
 
 	}
@@ -98,12 +98,12 @@ public class FrameworkWeb {
 			String msgObtida = elemento.getText();
 
 			if (!msgObtida.contains(msgEsperada)) {
-				escreveRelatorio(false, "A mensagem do alerta é diferente do esperado!/n" + "Esperada: " + msgEsperada
+				escreveRelatorio(false, "Falhou! A mensagem do alerta é diferente do esperado!/n" + "Esperada: " + msgEsperada
 						+ "/n" + "Obtida: " + msgObtida, true);
 			}
 
 		} catch (Exception e) {
-			escreveRelatorio(false, "Não foi possível validar a mensagem do alerta!", true);
+			escreveRelatorio(false, "Erro! Não foi possível validar a mensagem do alerta!", true);
 		}
 
 	}
@@ -143,22 +143,6 @@ public class FrameworkWeb {
 
 	}
 
-//	public String[] leColunaTabela(WebElement tabela, String nomeColuna){
-//		
-//		int numeroColuna = obterIndiceColuna(tabela, nomeColuna);
-//		int linhas = tabela.findElements(By.tagName("tr")).size() - 1;
-//		String[] listaColuna = new String[linhas];
-//		
-//		for(int indiceLinha = 1; indiceLinha<=linhas; indiceLinha++) {
-//			
-//			WebElement linha = tabela.findElements(By.tagName("tr")).get(indiceLinha);
-//			listaColuna[indiceLinha - 1] = linha.findElements(By.tagName("td")).get(numeroColuna).getText();
-//		}
-//		
-//		return listaColuna;
-//		
-//	}
-
 	public ArrayList<String> leColunaTabela(WebElement tabela, String nomeColuna) {
 
 		int numeroColuna = obterIndiceColuna(tabela, 1, nomeColuna);
@@ -194,7 +178,7 @@ public class FrameworkWeb {
 		}
 
 		if (localizada == false) {
-			escreveRelatorio(false, "Não foi possível localizar a coluna " + nomeColuna + " na tabela!", true);
+			escreveRelatorio(false, "Falhou! Não foi possível localizar a coluna " + nomeColuna + " na tabela!", true);
 		}
 
 		return indiceColuna;
@@ -227,7 +211,7 @@ public class FrameworkWeb {
 		}
 
 		if (localizada == false) {
-			escreveRelatorio(false, "Não foi possível localizar a linha " + valorLinha + " na tabela!", true);
+			escreveRelatorio(false, "Falhou! Não foi possível localizar a linha " + valorLinha + " na tabela!", true);
 		}
 
 		return row;
@@ -240,12 +224,12 @@ public class FrameworkWeb {
 
 			for (int i = 0; i <= lista1.size(); i++) {
 				if (lista1.get(i) != lista1.get(i)) {
-					escreveRelatorio(false, "A listas contém valores diferentes", true);
+					escreveRelatorio(false, "Falhou! A listas contém valores diferentes", true);
 				}
 			}
 
 		} else {
-			escreveRelatorio(false, "As listas não contém o mesmo tamanho!", true);
+			escreveRelatorio(false, "Falhou! As listas não contém o mesmo tamanho!", true);
 		}
 
 	}
@@ -258,7 +242,7 @@ public class FrameworkWeb {
 			return elemento.getText();
 
 		} catch (Exception e) {
-			escreveRelatorio(false, "Não foi possível obter texto do elemento " + elemento, true);
+			escreveRelatorio(false, "Erro! Não foi possível obter texto do elemento " + elemento, true);
 			return "";
 		}
 
@@ -272,7 +256,7 @@ public class FrameworkWeb {
 			return elemento.isDisplayed();
 
 		} catch (Exception e) {
-			escreveRelatorio(false, "O elemento " + elemento + " não esta visível!", true);
+			escreveRelatorio(false, "Erro! O elemento " + elemento + " não esta visível!", true);
 			return false;
 		}
 
@@ -317,7 +301,7 @@ public class FrameworkWeb {
 		}
 
 		if (find == false)
-			escreveRelatorio(false, "Não foi possível selecionar " + value, true);
+			escreveRelatorio(false, "Falhou! Não foi possível selecionar " + value, true);
 
 	}
 
@@ -339,44 +323,44 @@ public class FrameworkWeb {
 		}
 
 		if (find == false)
-			escreveRelatorio(false, "Não foi possível selecionar " + value, true);
+			escreveRelatorio(false, "Falhou! Não foi possível selecionar " + value, true);
 
 	}
 
-	public void selecionaComboBox(WebElement elemento, String item) {
+	public void selecionaComboBoxPorValor(WebElement elemento, String item) {
 
 		Select comboBox = new Select(elemento);
 
 		try {
 			comboBox.selectByValue(item);
 		} catch (Exception e) {
-			escreveRelatorio(false, "Não foi possível selecionar o item " + item, true);
+			escreveRelatorio(false, "Erro! Não foi possível selecionar o item " + item, true);
 		}
 
 	}
 
-	public void selecionaComboBox2(WebElement elemento, String item) {
+	public void selecionaComboBoxPorTexto(WebElement elemento, String item) {
 
 		Select comboBox = new Select(elemento);
 
 		try {
-			comboBox.selectByIndex(1);
+			comboBox.selectByVisibleText(item);
 		} catch (Exception e) {
-			escreveRelatorio(false, "Não foi possível selecionar o item " + item, true);
+			escreveRelatorio(false, "Erro! Não foi possível selecionar o item " + item, true);
 		}
 
 	}
 	
-	public WebElement retornaItemLista(WebElement elementoLista, String itemLista) {
+	public WebElement retornaElementoFilhoPorTexto(WebElement elementoPai, By byElementoFilho, String textoElementoFilho) {
 		
 		WebElement elementoItemLista = null;
 		
 		try {
 			
-			List<WebElement> lista = driver.findElements(By.tagName("li"));
+			List<WebElement> lista = driver.findElements(byElementoFilho);
 			
 			for (WebElement item : lista) {
-				if (item.getText().equals(itemLista)) {
+				if (item.getText().contains(textoElementoFilho)) {
 					elementoItemLista = item;
 					break;
 				}
@@ -385,7 +369,7 @@ public class FrameworkWeb {
 			return elementoItemLista;
 			
 		} catch (Exception e) {
-			escreveRelatorio(false, "O item " + itemLista + " não foi localizado na lista " + elementoLista, true);
+			escreveRelatorio(false, "Erro! O item " + textoElementoFilho + " não foi localizado na lista " + elementoPai, true);
 			return elementoItemLista;
 		}
 	}

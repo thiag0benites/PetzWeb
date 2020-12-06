@@ -40,8 +40,7 @@ public class MenuPage {
 		for (String itemMenu : itensMenu) {
 			
 			itemMenu = itemMenu.toUpperCase();
-			
-			WebElement elementoItemMenu = web.retornaItemLista(xpathMenu, itemMenu);
+			WebElement elementoItemMenu = web.retornaElementoFilhoPorTexto(xpathMenu, By.tagName("li"), itemMenu);
 			
 			if(elementoItemMenu != null) {
 				

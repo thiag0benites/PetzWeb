@@ -1,7 +1,6 @@
 package br.com.steps;
 
 import br.com.pages.BuscaLojaPage;
-import cucumber.api.PendingException;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
 
@@ -14,31 +13,23 @@ public class BuscaLojaSteps extends BuscaLojaPage{
 
 	@Quando("^preencho os campos Fitrar por \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\"$")
 	public void preencho_os_campos_Fitrar_por(String filtro, String estado, String cidade) {
-		
-	}
-
-	@Quando("^realizo a busca$")
-	public void realizo_a_busca() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
-
-	@Quando("^acesso \"([^\"]*)\" no site Petz$")
-	public void acesso_no_site_Petz(String arg1) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+		preencheCamposPesquisa(filtro, estado, cidade);
 	}
 
 	@Quando("^preencho os campos Filtrar por \"([^\"]*)\" e \"([^\"]*)\"$")
-	public void preencho_os_campos_Filtrar_por_e(String arg1, String arg2) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+	public void preencho_os_campos_Filtrar_por_e(String filtro, String cep) {
+		preencheCamposPesquisa(filtro, cep);
 	}
 
 	@Entao("^valido as lojas encontradas$")
-	public void valido_as_lojas_encontradas() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+	public void valido_as_lojas_encontradas() {
+		validaPesquisa();
 	}
-		
+	
+	@Entao("^acesso e valido a loja \"([^\"]*)\"$")
+	public void acesso_e_valido_a_loja(String loja) {
+		acessaLoja(loja);
+	}
+
+	
 }
