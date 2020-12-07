@@ -79,7 +79,7 @@ formatter.examples({
   "keyword": "Exemplos"
 });
 formatter.before({
-  "duration": 6807241200,
+  "duration": 6223721000,
   "status": "passed"
 });
 formatter.background({
@@ -100,7 +100,7 @@ formatter.match({
 formatter.write("Passou! Acesso ao blog realizado!");
 formatter.embedding("image/png", "embedded0.png");
 formatter.result({
-  "duration": 5188185700,
+  "duration": 2671975900,
   "status": "passed"
 });
 formatter.scenario({
@@ -153,7 +153,7 @@ formatter.match({
 formatter.write("Passou! Item Nossas Lojas foi selecionado!");
 formatter.embedding("image/png", "embedded1.png");
 formatter.result({
-  "duration": 13668681700,
+  "duration": 3387074000,
   "status": "passed"
 });
 formatter.match({
@@ -176,7 +176,7 @@ formatter.match({
 formatter.write("Passou! Os campos Estado e Cidade foram preenchidos: SP - Barueri");
 formatter.embedding("image/png", "embedded2.png");
 formatter.result({
-  "duration": 3676997200,
+  "duration": 9431805900,
   "status": "passed"
 });
 formatter.match({
@@ -185,11 +185,11 @@ formatter.match({
 formatter.write("Passou! A busca retornou 2 lojas");
 formatter.embedding("image/png", "embedded3.png");
 formatter.result({
-  "duration": 2640399000,
+  "duration": 2577041500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1154386500,
+  "duration": 672081100,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -247,7 +247,7 @@ formatter.examples({
   "keyword": "Exemplos"
 });
 formatter.before({
-  "duration": 5453326600,
+  "duration": 5245010400,
   "status": "passed"
 });
 formatter.background({
@@ -268,7 +268,7 @@ formatter.match({
 formatter.write("Passou! Acesso ao blog realizado!");
 formatter.embedding("image/png", "embedded4.png");
 formatter.result({
-  "duration": 5094135000,
+  "duration": 2524899500,
   "status": "passed"
 });
 formatter.scenario({
@@ -320,7 +320,7 @@ formatter.match({
 formatter.write("Passou! Item Nossas Lojas foi selecionado!");
 formatter.embedding("image/png", "embedded5.png");
 formatter.result({
-  "duration": 12905626600,
+  "duration": 4153042900,
   "status": "passed"
 });
 formatter.match({
@@ -339,7 +339,7 @@ formatter.match({
 formatter.write("Passou! O campo CEP foi preenchido: 06414007");
 formatter.embedding("image/png", "embedded6.png");
 formatter.result({
-  "duration": 617653600,
+  "duration": 1866639200,
   "status": "passed"
 });
 formatter.match({
@@ -348,11 +348,11 @@ formatter.match({
 formatter.write("Passou! A busca retornou 6 lojas");
 formatter.embedding("image/png", "embedded7.png");
 formatter.result({
-  "duration": 2615363800,
+  "duration": 2537716900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1028701900,
+  "duration": 668698300,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -426,7 +426,7 @@ formatter.examples({
   "keyword": "Exemplos"
 });
 formatter.before({
-  "duration": 5712771700,
+  "duration": 5374503600,
   "status": "passed"
 });
 formatter.background({
@@ -447,7 +447,7 @@ formatter.match({
 formatter.write("Passou! Acesso ao blog realizado!");
 formatter.embedding("image/png", "embedded8.png");
 formatter.result({
-  "duration": 5026295200,
+  "duration": 2764886800,
   "status": "passed"
 });
 formatter.scenario({
@@ -507,7 +507,7 @@ formatter.match({
 formatter.write("Passou! Item Nossas Lojas foi selecionado!");
 formatter.embedding("image/png", "embedded9.png");
 formatter.result({
-  "duration": 13352726600,
+  "duration": 5850146800,
   "status": "passed"
 });
 formatter.match({
@@ -526,7 +526,7 @@ formatter.match({
 formatter.write("Passou! O campo CEP foi preenchido: 06414007");
 formatter.embedding("image/png", "embedded10.png");
 formatter.result({
-  "duration": 598841900,
+  "duration": 573446000,
   "status": "passed"
 });
 formatter.match({
@@ -535,7 +535,7 @@ formatter.match({
 formatter.write("Passou! A busca retornou 6 lojas");
 formatter.embedding("image/png", "embedded11.png");
 formatter.result({
-  "duration": 2653241900,
+  "duration": 2543229800,
   "status": "passed"
 });
 formatter.match({
@@ -550,15 +550,15 @@ formatter.match({
 formatter.write("Passou! A loja Petz Alphaville foi selecionada!");
 formatter.embedding("image/png", "embedded12.png");
 formatter.result({
-  "duration": 2881215500,
+  "duration": 1824038800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 819058100,
+  "duration": 694036600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5474217900,
+  "duration": 5327926200,
   "status": "passed"
 });
 formatter.background({
@@ -579,7 +579,7 @@ formatter.match({
 formatter.write("Passou! Acesso ao blog realizado!");
 formatter.embedding("image/png", "embedded13.png");
 formatter.result({
-  "duration": 5731303500,
+  "duration": 3392913500,
   "status": "passed"
 });
 formatter.scenario({
@@ -639,7 +639,7 @@ formatter.match({
 formatter.write("Passou! Item Nossas Lojas foi selecionado!");
 formatter.embedding("image/png", "embedded14.png");
 formatter.result({
-  "duration": 12554306200,
+  "duration": 5462107800,
   "status": "passed"
 });
 formatter.match({
@@ -658,7 +658,7 @@ formatter.match({
 formatter.write("Passou! O campo CEP foi preenchido: 04347090");
 formatter.embedding("image/png", "embedded15.png");
 formatter.result({
-  "duration": 581129000,
+  "duration": 626169800,
   "status": "passed"
 });
 formatter.match({
@@ -667,7 +667,7 @@ formatter.match({
 formatter.write("Passou! A busca retornou 6 lojas");
 formatter.embedding("image/png", "embedded16.png");
 formatter.result({
-  "duration": 2604285100,
+  "duration": 13730833300,
   "status": "passed"
 });
 formatter.match({
@@ -682,11 +682,11 @@ formatter.match({
 formatter.write("Passou! A loja Petz Itaim foi selecionada!");
 formatter.embedding("image/png", "embedded17.png");
 formatter.result({
-  "duration": 3032711700,
+  "duration": 2465797300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 813938600,
+  "duration": 667921600,
   "status": "passed"
 });
 formatter.uri("Menu.feature");
@@ -714,7 +714,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 5487666500,
+  "duration": 5317105900,
   "status": "passed"
 });
 formatter.background({
@@ -735,7 +735,7 @@ formatter.match({
 formatter.write("Passou! Acesso ao blog realizado!");
 formatter.embedding("image/png", "embedded18.png");
 formatter.result({
-  "duration": 5464816000,
+  "duration": 3067946900,
   "status": "passed"
 });
 formatter.scenario({
@@ -817,11 +817,11 @@ formatter.embedding("image/png", "embedded29.png");
 formatter.write("Passou! Foram carregados 10 artigos na primeira página do item BEM-ESTAR do menu");
 formatter.embedding("image/png", "embedded30.png");
 formatter.result({
-  "duration": 28408646100,
+  "duration": 22038495700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 758662100,
+  "duration": 639089400,
   "status": "passed"
 });
 });
